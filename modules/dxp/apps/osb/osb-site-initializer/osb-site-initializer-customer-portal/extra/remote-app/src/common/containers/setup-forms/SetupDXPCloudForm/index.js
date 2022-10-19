@@ -255,7 +255,7 @@ const SetupDXPCloudPage = ({
 									{i18n.translate('liferay-dxp-version')}
 								</label>
 
-								<div className="position-relative">
+								<div className="mr-3 position-relative">
 									<ClayIcon
 										className="select-icon"
 										symbol="caret-bottom"
