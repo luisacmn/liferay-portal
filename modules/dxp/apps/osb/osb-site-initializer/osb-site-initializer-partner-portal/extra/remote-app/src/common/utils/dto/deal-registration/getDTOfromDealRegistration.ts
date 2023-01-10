@@ -28,6 +28,8 @@ export function getDTOFromDealRegistration(
 		additionalInformationAboutTheOpportunity:
 			dealRegistration.additionalInformationAboutTheOpportunity,
 		leadExternalReferenceCode,
+
+		leadStatusDetail: dealRegistration.leadStatusDetail,
 		mdfActivityExternalReferenceCodeSF:
 			dealRegistration.mdfActivityAssociated.externalReferenceCodeSF,
 		primaryProspectBusinessUnit:

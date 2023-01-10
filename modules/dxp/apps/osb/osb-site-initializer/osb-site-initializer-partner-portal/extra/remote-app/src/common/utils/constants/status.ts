@@ -50,4 +50,8 @@ export const Status = {
 		key: 'moreInfoRequested',
 		name: 'More Info Requested',
 	},
+	STATUS: {
+		key: 'expressedInterest',
+		name: 'Expressed Interest',
+	},
 };

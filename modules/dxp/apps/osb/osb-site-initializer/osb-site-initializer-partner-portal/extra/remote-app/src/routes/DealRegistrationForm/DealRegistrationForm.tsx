@@ -28,6 +28,7 @@ import submitForm from './utils/submitForm';
 const initialFormValues: DealRegistration = {
 	additionalContact: {emailAddress: '', firstName: '', lastName: ''},
 	additionalInformationAboutTheOpportunity: '',
+	leadStatusDetail: Status.STATUS.name,
 	mdfActivityAssociated: {},
 	partnerAccount: {},
 	primaryProspect: {
@@ -102,7 +103,7 @@ const DealRegistrationForm = () => {
 		<PRMFormik
 			initialValues={initialFormValues}
 			onSubmit={(values, formikHelpers) =>
-				submitForm(values, formikHelpers, siteURL)
+				submitForm(values, formikHelpers, siteURL, Status.STATUS.name)
 			}
 		>
 			{StepFormComponent[step]}
